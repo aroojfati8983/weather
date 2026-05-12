@@ -1,0 +1,147 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* container*/
+.app-container {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/*form*/
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  color: #2575fc;
+}
+
+input {
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2575fc;
+}
+
+button {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+/*weather card*/
+.weather-card {
+  padding: 25px;
+  border-radius: 15px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.weather-emoji {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+h3 span {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+h2 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+
+/*message*/
+.error-message {
+  background: #ffeaa7;
+  color: #e17055;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 20px;
+  border-left: 4px solid #e17055;
+}
+
+.initial-message {
+  background: #dfe6e9;
+  color: #636e72;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 20px;
+  border-left: 4px solid #636e72;
+}
+/*mobile*/
+
+@media (max-width: 480px) {
+  .app-container {
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+  
+  h2 {
+    font-size: 36px;
+  }
+  
+  .weather-emoji {
+    font-size: 50px;
+  }
+}
